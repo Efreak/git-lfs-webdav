@@ -1,11 +1,8 @@
 project_name: git-lfs-webdav
 builds:
   - env: [CGO_ENABLED=0]
-    goos:
-      - linux
-    goarch:
-      - arm64
-      - arm
-    goarm:
-      - 6
-      - 7
+    targets:
+      - go_first_class
+      - linux_arm64
+      - android_arm64
+      - linux_arm_7
